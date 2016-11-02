@@ -19,9 +19,19 @@ using namespace std;
  *   10 * 5 = 50
  */
 
+void multiplication(int num) {
+  for (int row = 1; row <= 10; row++) {
+    cout << row << " * " << num << " = " << row * num << endl;
+  }
+  cout << endl;
+}
 
 int main() {
-
+  int input;
+  cout << "Please give me a number and I will show you how to multiply it: ";
+  cin >> input;
+  cout << "Here you go: " << endl;
+  multiplication(input);
   return 0;
 }
 
